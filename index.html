@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héroes de la Fe - Personajes Bíblicos</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Trajan+Pro:wght@400;700&family=Cinzel:wght@400;500;600;700&family=Marcellus:wght@400&display=swap');
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html, body {
+        width: 100%;
+        overflow-x: hidden;
+      }
+
+      #root {
+        width: 100%;
+        min-height: 100vh;
+      }
+
+      @keyframes shine {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(100%); }
+      }
+      .group:hover .shine-effect {
+        animation: shine 0.8s ease-in-out;
+      }
+
+      @keyframes button-shine {
+        0% { transform: translateX(-100%) skewX(-15deg); }
+        100% { transform: translateX(200%) skewX(-15deg); }
+      }
+
+      .bg-gradient-radial {
+        background: radial-gradient(circle, var(--tw-gradient-stops));
+      }
+
+      @keyframes float-up {
+        0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+        10% { opacity: 1; }
+        90% { opacity: 1; }
+        100% { transform: translateY(-100px) rotate(360deg); opacity: 0; }
+      }
+
+      @keyframes divine-glow {
+        0%, 100% {
+          filter: drop-shadow(0 0 5px currentColor) brightness(1);
+        }
+        50% {
+          filter: drop-shadow(0 0 20px currentColor) brightness(1.5);
+        }
+      }
+
+      @keyframes flame-glow {
+        0%, 100% {
+          box-shadow: 0 0 20px rgba(255, 107, 53, 0.5), inset 0 0 20px rgba(255, 204, 2, 0.3);
+          transform: scale(1);
+        }
+        50% {
+          box-shadow: 0 0 30px rgba(255, 107, 53, 0.8), inset 0 0 30px rgba(255, 204, 2, 0.5);
+          transform: scale(1.05);
+        }
+      }
+
+      .assassins-font {
+        font-family: 'Cinzel', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

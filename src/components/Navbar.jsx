@@ -23,7 +23,7 @@ function Navbar() {
 
   return (
     <nav
-      className="w-full backdrop-blur-md sticky top-0 z-50 relative"
+      className="w-full backdrop-blur-md sticky top-0 z-50"
       style={{
         background: 'linear-gradient(135deg, rgba(55, 65, 81, 0.95) 0%, rgba(75, 85, 99, 0.9) 50%, rgba(55, 65, 81, 0.95) 100%)',
         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)',
